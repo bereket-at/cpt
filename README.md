@@ -17,6 +17,9 @@ gcc cpt4.c -o cpt4
 
 # Decrypt the message back
 ./cpt4 dec "Fcjjm_Umpjb" 2
+
+# Get help
+./cpt4 help
 ```
 
 ## 👤 Author
