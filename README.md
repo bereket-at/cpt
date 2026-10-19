@@ -4,7 +4,7 @@ A secure command-line tool written in C to encrypt and decrypt strings using a d
 
 ## ✨ Features
 - Uses dynamic memory (`malloc`/`free`) safely.
-- **Spy Mode:** Automatically converts spaces (` `) into underscores (`_`) during encryption.
+- **Space support:** encrypts and decrypts strings containing spaces flawlessly.
 
 ## 🚀 How to Run
 
@@ -16,7 +16,7 @@ gcc cpt4.c -o cpt4
 ./cpt4 enc "Hello World" 2
 
 # Decrypt the message back
-./cpt4 dec "Fcjjm_Umpjb" 2
+./cpt4 dec "Fcjjm Umpjb" 2
 
 # Get help
 ./cpt4 help
