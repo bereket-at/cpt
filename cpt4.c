@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     strcpy(newmsg, to_encrypt);
     for (int i = 0; i < slen; i++) {
       if (newmsg[i] == ' ') {
-        newmsg[i] = '_';
+        newmsg[i] = ' ';
         continue;
       }
       newmsg[i] -= step;
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 
     strcpy(newmsg, to_decrypt);
     for (int i = 0; i < slen; i++) {
-      if (newmsg[i] == '_') {
+      if (newmsg[i] == ' ') {
         newmsg[i] = ' ';
         continue;
       }
